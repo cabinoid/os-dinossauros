@@ -1,0 +1,146 @@
+/* Cores principais */
+:root {
+    --primary-color: #2f4f4f; /* Dark Slate Gray */
+    --secondary-color: #4caf50; /* Green */
+    --accent-color: #8bc34a; /* Light Green */
+    --background-color: #f0fff0; /* Honeydew */
+    --text-color: #fff; /* White */
+    --header-color: #006400; /* Dark Green */
+}
+
+/* Estilos Globais */
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: var(--header-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Estilo Principal */
+main {
+    padding: 40px 20px;
+    background-color: var(--background-color);
+}
+
+/* Estilo da Galeria de Dinossauros */
+.dinossauros {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dinossauro {
+    width: 30%;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dinossauro:hover {
+    transform: scale(1.05);
+}
+
+.dinossauro img {
+    border-radius: 10px;
+}
+
+/* Estilo do Formulário */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label, form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+form button {
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: var(--header-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: var(--accent-color);
+}
